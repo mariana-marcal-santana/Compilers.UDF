@@ -1,0 +1,22 @@
+int g(int i)
+int f(int i) {
+  int n = 9;
+  if (i == 0)
+    n = 0;
+  else
+    n = i + g(i - 1);
+  return n;
+}
+int g(int i) {
+  int n = 9;
+  if (i == 0)
+    n = 0;
+  else
+    n = i + f(i - 1);
+  return n;
+}
+public int udf() {
+  writeln f(3);
+  return 0;
+}
+

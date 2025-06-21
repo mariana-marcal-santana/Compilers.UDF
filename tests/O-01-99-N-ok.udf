@@ -1,0 +1,7 @@
+real f(int x, real y) { return y + x; }
+public int udf() {
+  writeln f(3, 10);
+  writeln f(2,  3);
+  return 0;
+}
+

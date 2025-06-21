@@ -1,0 +1,5 @@
+public int udf() {
+  writeln "s" "tr" "i" "ng";
+  return 0;
+}
+

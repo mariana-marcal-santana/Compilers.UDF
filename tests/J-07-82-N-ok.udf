@@ -1,0 +1,9 @@
+void f() {
+  int main = 1;
+  writeln 2 * main + main;
+}
+public int udf() {
+  f();
+  return 0;
+}
+

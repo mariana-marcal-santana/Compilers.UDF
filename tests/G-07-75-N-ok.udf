@@ -1,0 +1,6 @@
+real f() { return 1.1; }
+public int udf() {
+  writeln sizeof(f());
+  return 0;
+}
+

@@ -1,0 +1,11 @@
+int x;
+public int udf() {
+  writeln 9;
+  x = 1;
+  for (; x < -3; ) {
+    writeln x;
+    x = x + 1;
+  }
+  return 0;
+}
+

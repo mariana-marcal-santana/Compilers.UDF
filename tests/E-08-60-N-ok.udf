@@ -1,0 +1,9 @@
+int x = 1;
+public int udf() {
+  for (; x <= 5; ) {
+    writeln x;
+    x = x + 2;
+  }
+  return 0;
+}
+

@@ -1,0 +1,7 @@
+tensor<2,2> t;
+public int udf() {
+  t = [[1, 2], [3, 4]];
+  writeln t;
+  return 0;
+}
+

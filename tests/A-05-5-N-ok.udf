@@ -1,0 +1,4 @@
+public int udf() { 
+	writeln 10;                
+	return 0; 
+}

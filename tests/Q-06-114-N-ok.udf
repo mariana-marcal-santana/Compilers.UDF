@@ -1,0 +1,9 @@
+public real main(ptr<real> p) {
+  return p[0];
+}
+public int udf() {
+  real r = 6.1E1;
+  writeln main(r?);
+  return 0;
+}
+

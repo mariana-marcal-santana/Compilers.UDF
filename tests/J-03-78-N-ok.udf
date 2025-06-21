@@ -1,0 +1,8 @@
+string f() {
+  return "ola";
+}
+public int udf() {
+  writeln f();
+  return 0;
+}
+

@@ -1,0 +1,6 @@
+int f(int x) { return 1 + x; }
+public int udf() {
+  writeln f(3);
+  return 0;
+}
+

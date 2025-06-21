@@ -1,0 +1,6 @@
+forward int argc()
+public int udf() {
+  writeln argc();
+  return 0;
+}
+

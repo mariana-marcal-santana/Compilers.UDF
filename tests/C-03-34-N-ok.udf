@@ -1,0 +1,5 @@
+string x = "ola"; 
+public int udf() { 
+	writeln x;     
+	return 0; 
+}

@@ -1,0 +1,8 @@
+real r = 6.1E1;
+public int udf() {
+  ptr<real> p = nullptr;
+  p = r?;
+  writeln p[0];
+  return 0;
+}
+

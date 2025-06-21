@@ -1,0 +1,4 @@
+public int udf() { 
+	writeln "ola";             
+	return 0; 
+}

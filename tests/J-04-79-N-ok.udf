@@ -1,0 +1,10 @@
+forward void f()
+public void f() {
+  int x = 3;
+  writeln x;
+}
+public int udf() {
+  f();
+  return 0;
+}
+

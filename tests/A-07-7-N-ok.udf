@@ -1,0 +1,4 @@
+public int udf() { 
+	writeln "X \0a Y \a Z \n"; 
+	return 0; 
+}

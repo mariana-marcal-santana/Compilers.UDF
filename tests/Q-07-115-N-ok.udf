@@ -1,0 +1,13 @@
+public real main(ptr<real> p) {
+  return p[0];
+}
+public int udf() {
+  ptr<real> p = nullptr;
+  p = objects(3);
+  p[0] = 3.1;
+  p[1] = 2.1;
+  p[2] = 6.1E1;
+  writeln main(p[2]?);
+  return 0;
+}
+

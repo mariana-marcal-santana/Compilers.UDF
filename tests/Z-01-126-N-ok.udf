@@ -1,0 +1,8 @@
+int f(int a) { return a + 1; }
+public int udf() {
+  int i = 9;
+  auto t = [[2+1, i], [f(i), 2]];
+  writeln t;
+  return 0;
+}
+

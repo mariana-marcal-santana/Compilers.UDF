@@ -1,0 +1,6 @@
+auto i = 1;
+public int udf() {
+  writeln sizeof(i);
+  return 0;
+}
+

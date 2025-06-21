@@ -1,0 +1,452 @@
+<sequence_node size='1'>
+  <function_definition_node name='udf' qualifier='public' type='integer'>
+  <arguments>
+      <sequence_node size='0'>
+      </sequence_node>
+  </arguments>
+    <block_node>
+      <declarations>
+        <sequence_node size='4'>
+          <variable_declaration_node name='t1' qualifier='private' type='[3,3,2,2]'>
+          <initializer>
+              <tensor_node>
+                <cells>
+                  <sequence_node size='3'>
+                    <tensor_node>
+                      <cells>
+                        <sequence_node size='2'>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>1</integer_node>
+                                <integer_node>2</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>3</integer_node>
+                                <integer_node>4</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                        </sequence_node>
+                      </cells>
+                    </tensor_node>
+                    <tensor_node>
+                      <cells>
+                        <sequence_node size='2'>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>5</integer_node>
+                                <integer_node>6</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>7</integer_node>
+                                <integer_node>8</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                        </sequence_node>
+                      </cells>
+                    </tensor_node>
+                    <tensor_node>
+                      <cells>
+                        <sequence_node size='2'>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>9</integer_node>
+                                <integer_node>0</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='2'>
+                                <integer_node>8</integer_node>
+                                <integer_node>7</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                        </sequence_node>
+                      </cells>
+                    </tensor_node>
+                  </sequence_node>
+                </cells>
+              </tensor_node>
+          </initializer>
+          </variable_declaration_node>
+          <variable_declaration_node name='t2' qualifier='private' type='[2,2,2,2,2,2,3]'>
+          <initializer>
+              <tensor_node>
+                <cells>
+                  <sequence_node size='2'>
+                    <tensor_node>
+                      <cells>
+                        <sequence_node size='2'>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='3'>
+                                <integer_node>1</integer_node>
+                                <integer_node>2</integer_node>
+                                <integer_node>3</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='3'>
+                                <integer_node>4</integer_node>
+                                <integer_node>5</integer_node>
+                                <integer_node>6</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                        </sequence_node>
+                      </cells>
+                    </tensor_node>
+                    <tensor_node>
+                      <cells>
+                        <sequence_node size='2'>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='3'>
+                                <integer_node>7</integer_node>
+                                <integer_node>8</integer_node>
+                                <integer_node>9</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                          <tensor_node>
+                            <cells>
+                              <sequence_node size='3'>
+                                <integer_node>0</integer_node>
+                                <integer_node>8</integer_node>
+                                <integer_node>7</integer_node>
+                              </sequence_node>
+                            </cells>
+                          </tensor_node>
+                        </sequence_node>
+                      </cells>
+                    </tensor_node>
+                  </sequence_node>
+                </cells>
+              </tensor_node>
+          </initializer>
+          </variable_declaration_node>
+          <variable_declaration_node name='t3' qualifier='private' type='[3,3,3,3,3,3,2,2]'>
+          <initializer>
+              <add_node>
+                <add_node>
+                  <rvalue_node>
+                      <variable_node>t1</variable_node>
+                  </rvalue_node>
+                  <mul_node>
+                    <rvalue_node>
+                        <variable_node>t1</variable_node>
+                    </rvalue_node>
+                    <rvalue_node>
+                        <tensor_index_node>
+                          <tensor>
+                            <rvalue_node>
+                                <variable_node>t1</variable_node>
+                            </rvalue_node>
+                          </tensor>
+                          <indices>
+                            <sequence_node size='3'>
+                              <integer_node>2</integer_node>
+                              <integer_node>1</integer_node>
+                              <integer_node>1</integer_node>
+                            </sequence_node>
+                          </indices>
+                        </tensor_index_node>
+                    </rvalue_node>
+                  </mul_node>
+                </add_node>
+                <integer_node>3</integer_node>
+              </add_node>
+          </initializer>
+          </variable_declaration_node>
+          <variable_declaration_node name='t4' qualifier='private' type='[2,2,2,2,2,2,2,2,3]'>
+          <initializer>
+              <tensor_reshape_node>
+                <tensor>
+                  <rvalue_node>
+                      <variable_node>t1</variable_node>
+                  </rvalue_node>
+                </tensor>
+                <new_dims>
+                  <sequence_node size='3'>
+                    <integer_node>2</integer_node>
+                    <integer_node>2</integer_node>
+                    <integer_node>3</integer_node>
+                  </sequence_node>
+                </new_dims>
+              </tensor_reshape_node>
+          </initializer>
+          </variable_declaration_node>
+        </sequence_node>
+      </declarations>
+      <instructions>
+        <sequence_node size='8'>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <mul_node>
+                  <integer_node>2</integer_node>
+                  <rvalue_node>
+                      <variable_node>t2</variable_node>
+                  </rvalue_node>
+                </mul_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <rvalue_node>
+                    <variable_node>t3</variable_node>
+                </rvalue_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <rvalue_node>
+                    <tensor_index_node>
+                      <tensor>
+                        <rvalue_node>
+                            <variable_node>t1</variable_node>
+                        </rvalue_node>
+                      </tensor>
+                      <indices>
+                        <sequence_node size='3'>
+                          <integer_node>2</integer_node>
+                          <integer_node>1</integer_node>
+                          <integer_node>1</integer_node>
+                        </sequence_node>
+                      </indices>
+                    </tensor_index_node>
+                </rvalue_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <rvalue_node>
+                    <variable_node>t4</variable_node>
+                </rvalue_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <eq_node>
+                  <rvalue_node>
+                      <variable_node>t1</variable_node>
+                  </rvalue_node>
+                  <rvalue_node>
+                      <variable_node>t3</variable_node>
+                  </rvalue_node>
+                </eq_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <ne_node>
+                  <rvalue_node>
+                      <variable_node>t1</variable_node>
+                  </rvalue_node>
+                  <rvalue_node>
+                      <variable_node>t3</variable_node>
+                  </rvalue_node>
+                </ne_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <for_node>
+            <init>
+              <sequence_node size='1'>
+                <variable_declaration_node name='i' qualifier='private' type='integer'>
+                <initializer>
+                    <integer_node>0</integer_node>
+                </initializer>
+                </variable_declaration_node>
+              </sequence_node>
+            </init>
+            <condition>
+              <sequence_node size='1'>
+                <lt_node>
+                  <rvalue_node>
+                      <variable_node>i</variable_node>
+                  </rvalue_node>
+                  <tensor_rank_node>
+                    <tensor>
+                      <rvalue_node>
+                          <variable_node>t1</variable_node>
+                      </rvalue_node>
+                    </tensor>
+                  </tensor_rank_node>
+                </lt_node>
+              </sequence_node>
+            </condition>
+            <increment>
+              <sequence_node size='1'>
+                <assignment_node>
+                <variable_node>i</variable_node>
+                    <add_node>
+                      <rvalue_node>
+                          <variable_node>i</variable_node>
+                      </rvalue_node>
+                      <integer_node>1</integer_node>
+                    </add_node>
+                </assignment_node>
+              </sequence_node>
+            </increment>
+            <instruction>
+              <block_node>
+                <instructions>
+                  <sequence_node size='2'>
+                    <write_node>
+                      <args>
+                        <sequence_node size='4'>
+                          <string_node>DIM </string_node>
+                          <rvalue_node>
+                              <variable_node>i</variable_node>
+                          </rvalue_node>
+                          <string_node> = </string_node>
+                          <tensor_dim_node>
+                            <index>0x55b274576b70</index>
+                            <tensor>
+                              <rvalue_node>
+                                  <variable_node>t1</variable_node>
+                              </rvalue_node>
+                            </tensor>
+                          </tensor_dim_node>
+                        </sequence_node>
+                      </args>
+                      <newline>
+                        true
+                      </newline>
+                    </write_node>
+                    <for_node>
+                      <init>
+                        <sequence_node size='1'>
+                          <variable_declaration_node name='j' qualifier='private' type='integer'>
+                          <initializer>
+                              <integer_node>0</integer_node>
+                          </initializer>
+                          </variable_declaration_node>
+                        </sequence_node>
+                      </init>
+                      <condition>
+                        <sequence_node size='1'>
+                          <lt_node>
+                            <rvalue_node>
+                                <variable_node>j</variable_node>
+                            </rvalue_node>
+                            <tensor_dim_node>
+                              <index>0x55b274576c30</index>
+                              <tensor>
+                                <rvalue_node>
+                                    <variable_node>t1</variable_node>
+                                </rvalue_node>
+                              </tensor>
+                            </tensor_dim_node>
+                          </lt_node>
+                        </sequence_node>
+                      </condition>
+                      <increment>
+                        <sequence_node size='1'>
+                          <assignment_node>
+                          <variable_node>j</variable_node>
+                              <add_node>
+                                <rvalue_node>
+                                    <variable_node>j</variable_node>
+                                </rvalue_node>
+                                <integer_node>1</integer_node>
+                              </add_node>
+                          </assignment_node>
+                        </sequence_node>
+                      </increment>
+                      <instruction>
+                        <block_node>
+                          <instructions>
+                            <sequence_node size='1'>
+                              <write_node>
+                                <args>
+                                  <sequence_node size='3'>
+                                    <rvalue_node>
+                                        <variable_node>i</variable_node>
+                                    </rvalue_node>
+                                    <string_node>, </string_node>
+                                    <rvalue_node>
+                                        <variable_node>j</variable_node>
+                                    </rvalue_node>
+                                  </sequence_node>
+                                </args>
+                                <newline>
+                                  true
+                                </newline>
+                              </write_node>
+                            </sequence_node>
+                          </instructions>
+                        </block_node>
+                      </instruction>
+                    </for_node>
+                  </sequence_node>
+                </instructions>
+              </block_node>
+            </instruction>
+          </for_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <sizeof_node>
+                  <expression>
+                    <rvalue_node>
+                        <variable_node>t1</variable_node>
+                    </rvalue_node>
+                  </expression>
+                </sizeof_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+        </sequence_node>
+      </instructions>
+    </block_node>
+  </function_definition_node>
+</sequence_node>

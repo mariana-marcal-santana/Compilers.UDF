@@ -1,0 +1,14 @@
+forward int g(string s)
+int f(string s) {
+  g(s);
+  return 10;
+}
+public int g(string s) {
+  writeln s;
+  return 14;
+}
+public int udf() {
+  writeln f("ola");
+  return 0;
+}
+

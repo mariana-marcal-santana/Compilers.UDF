@@ -1,0 +1,227 @@
+<sequence_node size='2'>
+  <function_definition_node name='factorial' qualifier='public' type='void'>
+  <arguments>
+      <sequence_node size='2'>
+        <variable_declaration_node name='t' qualifier='private' type='[16]'>
+        </variable_declaration_node>
+        <variable_declaration_node name='idx' qualifier='private' type='integer'>
+        </variable_declaration_node>
+      </sequence_node>
+  </arguments>
+    <block_node>
+      <instructions>
+        <sequence_node size='3'>
+          <if_else_node>
+            <condition>
+              <eq_node>
+                <rvalue_node>
+                    <variable_node>idx</variable_node>
+                </rvalue_node>
+                <integer_node>0</integer_node>
+              </eq_node>
+            </condition>
+            <then>
+              <block_node>
+                <instructions>
+                  <sequence_node size='1'>
+                    <evaluation_node>
+                      <assignment_node>
+                      <tensor_index_node>
+                        <tensor>
+                          <rvalue_node>
+                              <variable_node>t</variable_node>
+                          </rvalue_node>
+                        </tensor>
+                        <indices>
+                          <sequence_node size='1'>
+                            <rvalue_node>
+                                <variable_node>idx</variable_node>
+                            </rvalue_node>
+                          </sequence_node>
+                        </indices>
+                      </tensor_index_node>
+                          <integer_node>1</integer_node>
+                      </assignment_node>
+                    </evaluation_node>
+                  </sequence_node>
+                </instructions>
+              </block_node>
+            </then>
+            <else>
+              <if_else_node>
+                <condition>
+                  <lt_node>
+                    <rvalue_node>
+                        <variable_node>idx</variable_node>
+                    </rvalue_node>
+                    <tensor_dim_node>
+                      <index>0x55d7645cd0e8</index>
+                      <tensor>
+                        <rvalue_node>
+                            <variable_node>t</variable_node>
+                        </rvalue_node>
+                      </tensor>
+                    </tensor_dim_node>
+                  </lt_node>
+                </condition>
+                <then>
+                  <block_node>
+                    <instructions>
+                      <sequence_node size='1'>
+                        <evaluation_node>
+                          <assignment_node>
+                          <tensor_index_node>
+                            <tensor>
+                              <rvalue_node>
+                                  <variable_node>t</variable_node>
+                              </rvalue_node>
+                            </tensor>
+                            <indices>
+                              <sequence_node size='1'>
+                                <rvalue_node>
+                                    <variable_node>idx</variable_node>
+                                </rvalue_node>
+                              </sequence_node>
+                            </indices>
+                          </tensor_index_node>
+                              <mul_node>
+                                <rvalue_node>
+                                    <tensor_index_node>
+                                      <tensor>
+                                        <rvalue_node>
+                                            <variable_node>t</variable_node>
+                                        </rvalue_node>
+                                      </tensor>
+                                      <indices>
+                                        <sequence_node size='1'>
+                                          <sub_node>
+                                            <rvalue_node>
+                                                <variable_node>idx</variable_node>
+                                            </rvalue_node>
+                                            <integer_node>1</integer_node>
+                                          </sub_node>
+                                        </sequence_node>
+                                      </indices>
+                                    </tensor_index_node>
+                                </rvalue_node>
+                                <rvalue_node>
+                                    <variable_node>idx</variable_node>
+                                </rvalue_node>
+                              </mul_node>
+                          </assignment_node>
+                        </evaluation_node>
+                      </sequence_node>
+                    </instructions>
+                  </block_node>
+                </then>
+                <else>
+                  <block_node>
+                    <instructions>
+                      <sequence_node size='1'>
+                        <return_node>
+                        </return_node>
+                      </sequence_node>
+                    </instructions>
+                  </block_node>
+                </else>
+              </if_else_node>
+            </else>
+          </if_else_node>
+          <write_node>
+            <args>
+              <sequence_node size='3'>
+                <rvalue_node>
+                    <variable_node>idx</variable_node>
+                </rvalue_node>
+                <string_node>! = </string_node>
+                <rvalue_node>
+                    <tensor_index_node>
+                      <tensor>
+                        <rvalue_node>
+                            <variable_node>t</variable_node>
+                        </rvalue_node>
+                      </tensor>
+                      <indices>
+                        <sequence_node size='1'>
+                          <rvalue_node>
+                              <variable_node>idx</variable_node>
+                          </rvalue_node>
+                        </sequence_node>
+                      </indices>
+                    </tensor_index_node>
+                </rvalue_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <evaluation_node>
+            <function_call_node name='factorial'>
+              <arguments>
+                <sequence_node size='2'>
+                  <rvalue_node>
+                      <variable_node>t</variable_node>
+                  </rvalue_node>
+                  <add_node>
+                    <rvalue_node>
+                        <variable_node>idx</variable_node>
+                    </rvalue_node>
+                    <integer_node>1</integer_node>
+                  </add_node>
+                </sequence_node>
+              </arguments>
+            </function_call_node>
+          </evaluation_node>
+        </sequence_node>
+      </instructions>
+    </block_node>
+  </function_definition_node>
+  <function_definition_node name='udf' qualifier='public' type='integer'>
+  <arguments>
+      <sequence_node size='0'>
+      </sequence_node>
+  </arguments>
+    <block_node>
+      <declarations>
+        <sequence_node size='1'>
+          <variable_declaration_node name='t' qualifier='private' type='[16,16,16,16,16,16,16,16,16,16,16,16,16]'>
+          </variable_declaration_node>
+        </sequence_node>
+      </declarations>
+      <instructions>
+        <sequence_node size='3'>
+          <evaluation_node>
+            <function_call_node name='factorial'>
+              <arguments>
+                <sequence_node size='2'>
+                  <rvalue_node>
+                      <variable_node>t</variable_node>
+                  </rvalue_node>
+                  <integer_node>0</integer_node>
+                </sequence_node>
+              </arguments>
+            </function_call_node>
+          </evaluation_node>
+          <write_node>
+            <args>
+              <sequence_node size='1'>
+                <rvalue_node>
+                    <variable_node>t</variable_node>
+                </rvalue_node>
+              </sequence_node>
+            </args>
+            <newline>
+              true
+            </newline>
+          </write_node>
+          <return_node>
+            <retval>
+              <integer_node>0</integer_node>
+            </retval>
+          </return_node>
+        </sequence_node>
+      </instructions>
+    </block_node>
+  </function_definition_node>
+</sequence_node>

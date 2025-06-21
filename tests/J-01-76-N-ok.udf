@@ -1,0 +1,8 @@
+void f() {
+  writeln "ola";
+}
+public int udf() {
+  f();
+  return 0;
+}
+

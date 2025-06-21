@@ -1,0 +1,8 @@
+int pi() {
+  return 314;
+}
+public int udf() {
+  writeln pi();
+  return 0;
+}
+

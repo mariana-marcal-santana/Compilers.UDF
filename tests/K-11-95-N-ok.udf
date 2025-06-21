@@ -1,0 +1,14 @@
+int g(int n)
+int f(string s) {
+  writeln s;
+  return 10;
+}
+int g(int n) {
+  writeln n;
+  return 10;
+}
+public int udf() {
+  f("ola");
+  return 0;
+}
+

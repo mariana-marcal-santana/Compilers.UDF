@@ -1,0 +1,5 @@
+public int udf() {
+  writeln sizeof(nullptr);
+  return 0;
+}
+

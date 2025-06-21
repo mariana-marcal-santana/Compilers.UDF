@@ -1,0 +1,6 @@
+int x;            
+public int udf() { 
+	x = 2;  
+	writeln 1 +  x * 3; 
+	return 0; 
+}

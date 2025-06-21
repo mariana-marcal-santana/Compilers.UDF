@@ -1,0 +1,10 @@
+real f;
+public int udf() {
+  ptr<real> p = nullptr;
+  p = objects(3);
+  p[1] = 6;
+  f = p[1];
+  writeln f;
+  return 0;
+}
+

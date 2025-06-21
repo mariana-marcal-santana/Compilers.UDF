@@ -1,0 +1,11 @@
+public int x = 10;
+void f() {
+  int x = 3;
+  writeln x;
+}
+public int udf() {
+  f();
+  writeln x;
+  return 0;
+}
+

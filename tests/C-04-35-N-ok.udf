@@ -1,0 +1,6 @@
+int x;            
+public int udf() { 
+	x = 4;  
+	writeln x; 
+	return 0; 
+}

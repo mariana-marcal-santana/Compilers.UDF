@@ -1,0 +1,6 @@
+void f(int x) { writeln x; }
+public int udf() {
+  f(3);
+  return 0;
+}
+

@@ -1,0 +1,5 @@
+public int udf() { 
+	writeln 0x2f; 
+	writeln 0x2F; 
+	return 0; 
+}

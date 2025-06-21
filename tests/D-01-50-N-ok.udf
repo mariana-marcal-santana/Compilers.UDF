@@ -1,0 +1,10 @@
+public int udf() {
+  if (0) 
+    writeln "KO";
+  elif (1) 
+    writeln "elif";
+  else
+    writeln "OK";
+  return 0;
+}
+

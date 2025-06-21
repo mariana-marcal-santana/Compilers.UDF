@@ -1,0 +1,9 @@
+public int udf() {
+  auto x = 0;
+  for (; x <= 29; ) {
+    writeln x;
+    x = x + 1;
+  }
+  return 0;
+}
+

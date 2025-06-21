@@ -1,0 +1,15 @@
+public int udf() {
+  int x = 0;
+  for (; x <= 29; ) {
+    if (x % 2 == 0) {
+      for (; x <= 14; ) {
+        writeln "";
+        x = x + 1;
+      }
+      writeln x;
+    }
+    x = x + 1;
+  }
+  return 0;
+}
+
